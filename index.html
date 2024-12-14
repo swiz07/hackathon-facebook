@@ -24,6 +24,12 @@
                 <div class="col-sm-8">
                     <marquee class="welcome">Welcome to my Page!</marquee>
                     <div class="post mt-4">
+                        <div class="new-post">
+                            <h5>Create a Post</h5>
+                            <textarea placeholder="What's on your mind?" class="form-control"></textarea>
+                            <button class="btn btn-primary mt-2 my-2">Post</button>
+                        </div> 
+                        <hr>                     
                         <h5>Post</h5>
                         <!-- Post 1 -->
                         <div class="post-header">
@@ -32,7 +38,7 @@
                         <div class="post-content">
                             <p>Checkout this game! I just made it</p>
                             <img src="images/game-image.jpeg" alt="Game image">
-                            <button>Like</button>
+                            <button class="like-btn" onclick="toggleLike(this)">Like</button>
                             <button>Comment</button>
                         </div>
     
@@ -43,7 +49,7 @@
                         <div class="post-content">
                             <p>Skating isn’t just a sport-it’s a lifestyle.</p>
                             <img src="images/post-image.jpeg" alt="skating image">
-                            <button>Like</button>
+                            <button class="like-btn" onclick="toggleLike(this)">Like</button>
                             <button>Comment</button>
                         </div>
                     </div>

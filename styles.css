@@ -1,6 +1,6 @@
 body{
     font-family: 'Comic Sans MS', sans-serif;
-    background-color: #FC72D1;
+    background-color: #f590d5c8;
     margin: 0;
     padding: 0;
 }
@@ -12,6 +12,7 @@ body{
 
 .welcome{
     font-weight: bold;
+    font-size: 18px;
 }
 
 /*sidebar styles*/
@@ -58,7 +59,7 @@ body{
     background-color: rgb(216, 224, 224);
 }
 
-.friend button, .post-content button{
+.friend button, .post-content button, .new-post button{
     background-color: #FF4500;
     color:white;
     padding: 5px 15px;
@@ -67,6 +68,12 @@ body{
 
 
 .friend button:hover, .post-content button:hover{
+    background-color: #FFFF00;
+    color: #FF4500;
+    border: 3px solid #FF4500;
+}
+
+.new-post button:hover{
     background-color: #FFFF00;
     color: #FF4500;
     border: 3px solid #FF4500;
@@ -83,6 +90,11 @@ body{
     border-bottom: 3px dotted #8B0000;
     padding-bottom: 10px;
     margin-bottom: 10px;
+}
+
+.form-control:focus {
+    outline: none;
+    box-shadow: none;
 }
 
 .post-header span{
