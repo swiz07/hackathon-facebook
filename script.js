@@ -4,5 +4,5 @@ function bgChange(x){
 }
 
 function normalbgColor(x){
-    x.style.backgroundColor="aliceblue";
+    x.style.backgroundColor="#20E3D9";
 }

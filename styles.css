@@ -1,8 +1,6 @@
 body{
     font-family: 'Comic Sans MS', sans-serif;
-    background:url(http://www.fillster.com/images/backgrounds/135m.gif);
-    background-attachment:fixed;
-    background-repeat:repeat;
+    background-color: #FC72D1;
     margin: 0;
     padding: 0;
 }
@@ -19,7 +17,7 @@ body{
 /*sidebar styles*/
 .sidebar, .post, .events{
     padding:10px;
-    background-color: aliceblue;
+    background-color: #20E3D9;
     border-radius: 5px;
     margin-bottom: 30px;
     border: 5px solid #FF1493;
@@ -31,7 +29,7 @@ body{
 
 .sidebar, .post, .trending-topics{
     padding:10px;
-    background-color: aliceblue;
+    background-color: #20E3D9;
     border: 5px solid #FF1493;
     border-radius: 5px;
     margin-bottom: 30px;
@@ -118,7 +116,7 @@ body{
 
 /*profile*/
 .profile{
-    background-color: aliceblue;
+    background-color: #20E3D9;
     margin: 30px auto;
     padding:20px;
     width: 500px;
@@ -224,7 +222,7 @@ footer{
 }
 
 .notifications{
-    background-color: aliceblue;
+    background-color: #20E3D9;
     width: 500px;
     height:auto;
     margin:20px auto;
