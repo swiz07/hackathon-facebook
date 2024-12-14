@@ -1,0 +1,286 @@
+body{
+    font-family: 'Comic Sans MS', sans-serif;
+    background:url(http://www.fillster.com/images/backgrounds/135m.gif);
+    background-attachment:fixed;
+    background-repeat:repeat;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper{
+    position: relative;
+    min-height: 100%;
+}
+
+.welcome{
+    font-weight: bold;
+}
+
+/*sidebar styles*/
+.sidebar, .post, .events{
+    padding:10px;
+    background-color: aliceblue;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    border: 5px solid #FF1493;
+}
+
+.sidebar{
+    height:400px;
+}
+
+.sidebar, .post, .trending-topics{
+    padding:10px;
+    background-color: aliceblue;
+    border: 5px solid #FF1493;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+
+.trending-topics li, .events li{
+    list-style-type: style;
+    margin-bottom: 5px;
+}
+.trending-topics a, .events a{
+    margin: 10px;
+    text-decoration: none;
+}
+
+.trending-topics a:hover, .events a:hover{
+    color: tomato;
+    text-decoration: underline;
+}
+
+.friend{
+    padding:4px;
+    border-bottom: 3px dotted green;
+}
+
+.friend button:hover{
+    background-color: rgb(216, 224, 224);
+}
+
+.friend button, .post-content button{
+    background-color: #FF4500;
+    color:white;
+    padding: 5px 15px;
+    border:3px solid #FFFF00;
+}
+
+
+.friend button:hover, .post-content button:hover{
+    background-color: #FFFF00;
+    color: #FF4500;
+    border: 3px solid #FF4500;
+}
+
+/*Post styles*/
+.post{
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    max-width: 650px;
+}
+
+.post-header{
+    font-weight: bold;
+    border-bottom: 3px dotted #8B0000;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.post-header span{
+    font-size: 14px;
+    color:rgba(128, 128, 128, 0.671);
+}
+
+.post-content p{
+    font-size: 18px;
+    margin-top:10px;
+}
+
+.post-content button{
+    margin-right:5px;
+    margin-bottom:10px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.post-content img{
+    width:50%;
+    border:5px solid #8B0000;
+    display: block;
+    margin-bottom: 10px;
+    height:auto;
+    margin-top: 15px;
+    border-radius: 8px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+
+/*profile*/
+.profile{
+    background-color: aliceblue;
+    margin: 30px auto;
+    padding:20px;
+    width: 500px;
+    border-radius: 10px;
+    border:5px solid rgb(243, 84, 111);
+}
+
+.header{
+    font-weight: bold;
+    font-size:21px;
+    text-align: center;
+    margin-bottom: 20px;
+    color:red;
+    text-shadow: 7px 1px 5px rgb(218, 98, 118);
+}
+
+.about-me{
+    text-align: center;
+}
+
+.about-me img{
+    width:200px;
+    border-radius: 100px;
+    border: 5px solid green;
+    box-shadow: 3px 3px 10px black;
+}
+
+.bio{
+    text-align: center;
+    margin-top: 10px;
+    color:#000080;
+}
+
+.bio h3{
+    text-decoration:underline;
+}
+
+.flexbox{
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-links{
+    display: flex;
+    gap:30px;
+}
+
+/*Navbar styles and footer styles*/
+.logo,.navbar-nav .nav-link{
+    font-family: 'Pixelify Sans', sans-serif;
+    font-size: 21px;
+    color: #00BFFF;
+}
+
+.navbar{
+    background-color:#3770b6;
+}
+
+.navbar-nav .nav-link:hover{
+    color:#FF6347;
+    text-shadow: #fbcb78 1px 0 10px;
+}
+
+footer{
+    margin-top: 10px;
+    background-color: #3770b6;
+    padding: 16px 0;
+    margin-top: 40px;
+    font-family: 'Pixelify Sans', sans-serif;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 10px;
+}
+
+.footer-links a{
+    text-decoration: none;
+    font-size: 21px;
+    padding:10px;
+    color: #00BFFF;
+}
+
+.footer-links li{
+    list-style: none;
+}
+
+.footer-links a:hover {
+    color: #FF6347;
+    text-shadow: #fbcb78 1px 0 10px;
+}
+
+.footer p {
+    font-family: 'Pixelify Sans', sans-serif;
+    font-size: 20px;
+    margin-top: 10px;
+    color: #00BFFF;
+    text-align: center;
+}
+
+.notifications{
+    background-color: aliceblue;
+    width: 500px;
+    height:auto;
+    margin:20px auto;
+    padding:20px;
+    border-radius: 10px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.notifications ul{
+    font-size: 18px;
+}
+
+/* For screens up to 989px */
+@media only screen and (max-width: 773px) {
+    .navbar{
+        padding:10px 15px;
+        font-size: 18px;
+    }
+    
+    .content{
+        flex-direction: column;
+    }
+
+    
+}
+
+/* For screens up to 500px */
+@media only screen and (max-width: 500px) {
+    .navbar {
+        padding: 8px 10px; 
+    }
+
+    .notifications, .profile{
+        font-size: 15px;
+        width:400px;
+    }
+
+    .navbar {
+        font-size: 18px;
+    }
+
+    .navbar-nav .nav-link {
+        margin-bottom: 5px;
+    }
+
+    /* Footer */
+    .footer {
+        padding: 10px 0;
+    }
+    
+    .footer-links a {
+        font-size: 18px;
+        padding: 8px 0;
+    }
+
+    .footer p{
+        font-size: 17px;
+    }
+}
